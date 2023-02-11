@@ -1,0 +1,7 @@
+version: '3'
+services:
+  quotes:
+    build: .
+    container_name: quotes
+    ports:
+      - 8090:8090
