@@ -6,4 +6,4 @@ FROM adoptopenjdk/openjdk8:alpine-slim
 RUN mkdir /opt/app
 COPY --from=MAVEN_BUILD target/quotes-1.0-SNAPSHOT.jar /opt/app
 
-ENTRYPOINT ["java","-Dfile.encoding=UTF-8","-jar","/opt/app/quotes-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-Dfile.encoding=UTF-8","-jar","/opt/app/quotes-1.0-SNAPSHOT.jar"]
